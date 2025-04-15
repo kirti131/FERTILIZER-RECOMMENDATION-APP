@@ -1,0 +1,243 @@
+[
+    {
+      "id": 1,
+      "season": "Rainy",
+      "name": "Paddy",
+      "title": "Grown in West Bengal, Uttar Pradesh, Punjab, Odisha",
+      "soil": "Clayey",
+      "fertilizer": "Urea, DAP"
+    },
+    {
+      "id": 2,
+      "season": "Rainy",
+      "name": "Maize",
+      "title": "Grown in Karnataka, Bihar, Madhya Pradesh",
+      "soil": "Alluvial",
+      "fertilizer": "NPK 20-20-0"
+    },
+    {
+      "id": 3,
+      "season": "Rainy",
+      "name": "Soybean",
+      "title": "Madhya Pradesh, Maharashtra, Rajasthan",
+      "soil": "Loamy",
+      "fertilizer": "SSP, Potash"
+    },
+    {
+      "id": 4,
+      "season": "Rainy",
+      "name": "Groundnut",
+      "title": "Gujarat, Andhra Pradesh, Tamil Nadu",
+      "soil": "Sandy Loam",
+      "fertilizer": "Gypsum, Potash"
+    },
+    {
+      "id": 5,
+      "season": "Rainy",
+      "name": "Tur (Arhar)",
+      "title": "Maharashtra, Karnataka, Uttar Pradesh",
+      "soil": "Well-drained Loamy",
+      "fertilizer": "DAP, SSP"
+    },
+    {
+      "id": 6,
+      "season": "Rainy",
+      "name": "Moong",
+      "title": "Andhra Pradesh, Odisha, Tamil Nadu",
+      "soil": "Sandy Loam",
+      "fertilizer": "Biofertilizers, Rhizobium"
+    },
+    {
+      "id": 7,
+      "season": "Rainy",
+      "name": "Urad",
+      "title": "Madhya Pradesh, Uttar Pradesh, Tamil Nadu",
+      "soil": "Black",
+      "fertilizer": "Nitrogen, Rhizobium"
+    },
+    {
+      "id": 8,
+      "season": "Rainy",
+      "name": "Jowar",
+      "title": "Maharashtra, Karnataka, Andhra Pradesh",
+      "soil": "Sandy to Loamy",
+      "fertilizer": "Nitrogen, Phosphorus"
+    },
+    {
+      "id": 9,
+      "season": "Rainy",
+      "name": "Bajra",
+      "title": "Rajasthan, Gujarat, Haryana",
+      "soil": "Sandy",
+      "fertilizer": "Organic Manure, Potash"
+    },
+    {
+      "id": 10,
+      "season": "Rainy",
+      "name": "Sesame (Til)",
+      "title": "West Bengal, Maharashtra, Andhra Pradesh",
+      "soil": "Loamy",
+      "fertilizer": "Phosphorus, Potassium"
+    },
+    {
+      "id": 11,
+      "season": "Winter",
+      "name": "Wheat",
+      "title": "Punjab, Haryana, Uttar Pradesh, Madhya Pradesh",
+      "soil": "Loamy",
+      "fertilizer": "Urea, DAP"
+    },
+    {
+      "id": 12,
+      "season": "Winter",
+      "name": "Mustard",
+      "title": "Rajasthan, Haryana, Uttar Pradesh",
+      "soil": "Sandy Loam",
+      "fertilizer": "NPK 20-20-0"
+    },
+    {
+      "id": 13,
+      "season": "Winter",
+      "name": "Barley",
+      "title": "Uttar Pradesh, Rajasthan, Punjab",
+      "soil": "Loamy",
+      "fertilizer": "Nitrogen, Phosphorus"
+    },
+    {
+      "id": 14,
+      "season": "Winter",
+      "name": "Peas",
+      "title": "Uttar Pradesh, Himachal Pradesh, Punjab",
+      "soil": "Loamy",
+      "fertilizer": "Compost, DAP"
+    },
+    {
+      "id": 15,
+      "season": "Winter",
+      "name": "Gram (Chana)",
+      "title": "Madhya Pradesh, Rajasthan, Maharashtra",
+      "soil": "Black",
+      "fertilizer": "SSP, Potash"
+    },
+    {
+      "id": 16,
+      "season": "Winter",
+      "name": "Lentil (Masoor)",
+      "title": "Uttar Pradesh, Bihar, Madhya Pradesh",
+      "soil": "Loamy",
+      "fertilizer": "DAP, Biofertilizer"
+    },
+    {
+      "id": 17,
+      "season": "Winter",
+      "name": "Onion",
+      "title": "Maharashtra, Karnataka, Tamil Nadu",
+      "soil": "Fertile Loamy",
+      "fertilizer": "NPK, Micronutrients"
+    },
+    {
+      "id": 18,
+      "season": "Winter",
+      "name": "Garlic",
+      "title": "Madhya Pradesh, Gujarat, Rajasthan",
+      "soil": "Well-drained Loamy",
+      "fertilizer": "Potash, DAP"
+    },
+    {
+      "id": 19,
+      "season": "Winter",
+      "name": "Carrot",
+      "title": "Punjab, Himachal Pradesh, Haryana",
+      "soil": "Sandy Loam",
+      "fertilizer": "Nitrogen, Potash"
+    },
+    {
+      "id": 20,
+      "season": "Winter",
+      "name": "Spinach (Palak)",
+      "title": "Uttar Pradesh, West Bengal, Bihar",
+      "soil": "Fertile Loamy",
+      "fertilizer": "Compost, Nitrogen"
+    },
+    {
+      "id": 21,
+      "season": "Summer",
+      "name": "Cotton",
+      "title": "Maharashtra, Gujarat, Telangana, Andhra Pradesh",
+      "soil": "Black",
+      "fertilizer": "Potassium, Urea"
+    },
+    {
+      "id": 22,
+      "season": "Summer",
+      "name": "Sugarcane",
+      "title": "Uttar Pradesh, Maharashtra, Tamil Nadu",
+      "soil": "Alluvial",
+      "fertilizer": "Nitrogen, Potash"
+    },
+    {
+      "id": 23,
+      "season": "Summer",
+      "name": "Sunflower",
+      "title": "Karnataka, Andhra Pradesh, Maharashtra",
+      "soil": "Loamy",
+      "fertilizer": "NPK, Sulphur"
+    },
+    {
+      "id": 24,
+      "season": "Summer",
+      "name": "Guar",
+      "title": "Rajasthan, Haryana, Gujarat",
+      "soil": "Sandy",
+      "fertilizer": "SSP, Compost"
+    },
+    {
+      "id": 25,
+      "season": "Summer",
+      "name": "Pumpkin",
+      "title": "Odisha, Bihar, West Bengal",
+      "soil": "Sandy Loam",
+      "fertilizer": "Organic Manure, Nitrogen"
+    },
+    {
+      "id": 26,
+      "season": "Summer",
+      "name": "Bottle Gourd",
+      "title": "Uttar Pradesh, Madhya Pradesh, Bihar",
+      "soil": "Sandy Loam",
+      "fertilizer": "Compost, DAP"
+    },
+    {
+      "id": 27,
+      "season": "Summer",
+      "name": "Watermelon",
+      "title": "Andhra Pradesh, Karnataka, Maharashtra",
+      "soil": "Sandy",
+      "fertilizer": "Potash, Nitrogen"
+    },
+    {
+      "id": 28,
+      "season": "Summer",
+      "name": "Cucumber",
+      "title": "Haryana, Punjab, Uttar Pradesh",
+      "soil": "Loamy",
+      "fertilizer": "Urea, Compost"
+    },
+    {
+      "id": 29,
+      "season": "Summer",
+      "name": "Lady Finger (Bhindi)",
+      "title": "Odisha, Andhra Pradesh, West Bengal",
+      "soil": "Well-drained",
+      "fertilizer": "Organic Fertilizers, Nitrogen"
+    },
+    {
+      "id": 30,
+      "season": "Summer",
+      "name": "Chili",
+      "title": "Andhra Pradesh, Karnataka, Maharashtra",
+      "soil": "Black or Loamy",
+      "fertilizer": "NPK, Urea"
+    }
+  ]
+  
