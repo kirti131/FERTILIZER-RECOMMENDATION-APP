@@ -1,31 +1,34 @@
 import React, { useState } from 'react';
 
 const FertilizerForm = () => {
-  const [crop, setCrop] = useState('');
-  const [season, setSeason] = useState('');
-  const [area, setArea] = useState('');
-  const [soil, setSoil] = useState('');
-  const [quantity, setQuantity] = useState('');
+  const [formData, setFormData] = useState({
+    temperature: '',
+    humidity: '',
+    moisture: '',
+    soilType: '',
+    cropType: '',
+    nitrogen: '',
+    potassium: '',
+    phosphorous: '',
+    zipCode: '',
+  });
+
   const [result, setResult] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const inputData = {
-      cropName: crop,
-      season: season,
-      area: area,
-      soilType: soil,
-      quantity: quantity
-    };
-
     try {
-      const response = await fetch('http://127.0.0.1:5000/predict', {
+      const response = await fetch('http://127.0.0.1:5000/recommend', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(inputData)
+        body: JSON.stringify(formData)
       });
 
       const data = await response.json();
@@ -39,11 +42,15 @@ const FertilizerForm = () => {
     <div>
       <h2>Fertilizer Recommendation</h2>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Crop" value={crop} onChange={e => setCrop(e.target.value)} /><br/>
-        <input type="text" placeholder="Season" value={season} onChange={e => setSeason(e.target.value)} /><br/>
-        <input type="text" placeholder="Area" value={area} onChange={e => setArea(e.target.value)} /><br/>
-        <input type="text" placeholder="Soil Type" value={soil} onChange={e => setSoil(e.target.value)} /><br/>
-        <input type="text" placeholder="Quantity" value={quantity} onChange={e => setQuantity(e.target.value)} /><br/>
+        <input type="text" name="temperature" placeholder="Temperature" value={formData.temperature} onChange={handleChange} required /><br/>
+        <input type="text" name="humidity" placeholder="Humidity" value={formData.humidity} onChange={handleChange} required /><br/>
+        <input type="text" name="moisture" placeholder="Moisture" value={formData.moisture} onChange={handleChange} required /><br/>
+        <input type="text" name="soilType" placeholder="Soil Type" value={formData.soilType} onChange={handleChange} required /><br/>
+        <input type="text" name="cropType" placeholder="Crop Type" value={formData.cropType} onChange={handleChange} required /><br/>
+        <input type="text" name="nitrogen" placeholder="Nitrogen" value={formData.nitrogen} onChange={handleChange} required /><br/>
+        <input type="text" name="phosphorous" placeholder="Phosphorous" value={formData.phosphorous} onChange={handleChange} required /><br/>
+        <input type="text" name="potassium" placeholder="Potassium" value={formData.potassium} onChange={handleChange} required /><br/>
+        <input type="text" name="zipCode" placeholder="Zip Code" value={formData.zipCode} onChange={handleChange} required /><br/>
         <button type="submit">Get Recommendation</button>
       </form>
 

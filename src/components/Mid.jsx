@@ -10,6 +10,7 @@ function Mid() {
     nitrogen: '',
     potassium: '',
     phosphorous: '',
+    zipCode: '',
   });
 
   const [recommendedFertilizer, setRecommendedFertilizer] = useState(null);
@@ -23,7 +24,6 @@ function Mid() {
     console.log('Form submitted:', formData);
 
     try {
-      // API call to Flask backend
       const response = await fetch('http://127.0.0.1:5000/recommend', {
         method: 'POST',
         headers: {
@@ -33,7 +33,7 @@ function Mid() {
       });
 
       const data = await response.json();
-      setRecommendedFertilizer(data.recommendation);  // Set the recommendation in state
+      setRecommendedFertilizer(data.recommendation);
     } catch (error) {
       console.error('Error:', error);
     }
@@ -86,7 +86,6 @@ function Mid() {
               required
             />
 
-            {/* Soil Type Selection */}
             <select
               name="soilType"
               value={formData.soilType}
@@ -98,9 +97,11 @@ function Mid() {
               <option>Clay</option>
               <option>Sandy</option>
               <option>Loamy</option>
+              <option>Silty</option>
+              <option>Peaty</option>
+              <option>Chalky</option>
             </select>
 
-            {/* Crop Type Selection */}
             <select
               name="cropType"
               value={formData.cropType}
@@ -112,7 +113,10 @@ function Mid() {
               <option>Wheat</option>
               <option>Rice</option>
               <option>Corn</option>
-              <option>Other</option>
+              <option>Barley</option>
+              <option>Soybean</option>
+              <option>Tomato</option>
+              <option>Potato</option>
             </select>
 
             <input
@@ -145,12 +149,21 @@ function Mid() {
               required
             />
 
+            <input
+              type="text"
+              name="zipCode"
+              placeholder="Zip Code"
+              value={formData.zipCode}
+              onChange={handleChange}
+              className="input input-bordered w-full"
+              required
+            />
+
             <button type="submit" className="btn bg-green-600 hover:bg-green-700 text-white w-full">
               Submit
             </button>
           </form>
 
-          {/* Show Recommended Fertilizer after form submission */}
           {recommendedFertilizer && (
             <div className="mt-6 p-4 bg-green-200 rounded-lg shadow-inner text-center">
               <h3 className="text-xl font-bold text-green-800">Recommended Fertilizer:</h3>
@@ -164,6 +177,8 @@ function Mid() {
 }
 
 export default Mid;
+
+
 
 
 
