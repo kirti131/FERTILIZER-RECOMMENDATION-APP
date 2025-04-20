@@ -30,8 +30,8 @@ function Navbar() {
           >
             <li><a href='/'>Home</a></li>
             <li><a href='/crop'>Crop</a></li>
-            <li><a>About</a></li>
-            <li><a>Contact</a></li>
+            <li><a href='/about'>About</a></li>
+            <li><a  href='/contact'>Contact</a></li>
           </ul>
         </div>
 
@@ -46,8 +46,8 @@ function Navbar() {
         <ul className="menu menu-horizontal px-1">
           <li><a href='/' className="text-white">Home</a></li>
           <li><a href='/crop' className="text-white">Crop</a></li>
-          <li><a className="text-white">About</a></li>
-          <li><a className="text-white">Contact</a></li>
+          <li><a href='/about' className="text-white">About</a></li>
+          <li><a href='/contact' className="text-white">Contact</a></li>
         </ul>
       </div>
 
